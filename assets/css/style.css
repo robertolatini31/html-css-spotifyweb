@@ -87,9 +87,9 @@ body {
 
 .left_aside a {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--aside_text-color);
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .left_aside>.logo img {
@@ -134,7 +134,7 @@ body {
 
 .aside_playlist h3 {
     color: var(--lighter-color);
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .new_playlist :first-child {
@@ -187,6 +187,7 @@ body {
 .aside_bottom>.profile span {
     color: var(--lighter-color);
     font-weight: 600;
+    font-size: 12px;
 }
 
 .left_aside {
@@ -223,11 +224,11 @@ body {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    padding: 0.8rem 3rem;
+    padding: 0.4rem 1.5rem;
     background-color: black;
     border: 1px solid white;
     border-radius: 30px;
-    font-size: 12px;
+    font-size: 10px;
     align-self: flex-end;
 }
 
@@ -247,9 +248,9 @@ body {
 
 .big_container>.navbar a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     color: var(--main_menu_text-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .big_container>.navbar hr {
@@ -257,6 +258,34 @@ body {
     width: 30px;
     margin: 0 auto;
     border-color: var(--success-color);
+}
+
+.big_container h2 , 
+.big_container h3 {
+    color: var(--lighter-color);
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.big_container h3 {
+    font-size: 14px;
+    padding: 0.5rem;
+}
+
+.big_container span {
+    color: var(--main_menu_text-color);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.albums>.album {
+    padding: 1rem 0 0 1rem;
+    align-items: center;
+    width: calc(100% / 6);
+}
+
+.album>img {
+    max-width: 100%;
 }
 
 /* #endregion Big_container  */
