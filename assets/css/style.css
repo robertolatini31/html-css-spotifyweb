@@ -5,6 +5,7 @@
     --success-color: #ADFF2F;
     --plus_btn-color: #A3A3A3;
     --profile-bgcolor: #808080;
+    --darker-color: #000000;
 
 
 
@@ -73,11 +74,12 @@ body {
 .left_aside {
     width: 20%;
     height: calc(100vh - 100px);
+    background-color: var(--darker-color);
 }
 
 .left_aside a {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--aside_text-color);
 }
 
@@ -118,7 +120,7 @@ body {
 }
 
 .aside_playlist {
-    row-gap: 1rem;
+    row-gap: 10px;
 }
 
 .aside_playlist h3 {
@@ -130,16 +132,16 @@ body {
     font-size: 25px;
     padding: 4px;
     color: black;
-    margin-right: 5px;
+}
+
+.new_playlist :last-child {
+    margin-left: 5px;
 }
 
 .left_aside>ul {
     list-style: none;
     padding: 0 1rem;
-}
-
-.left_aside>ul li {
-    padding: 0.5rem 0;
+    row-gap: 1rem;
 }
 
 .left_aside>.aside_bottom {
