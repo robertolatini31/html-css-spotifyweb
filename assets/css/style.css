@@ -41,6 +41,10 @@
     clear: both;
 }
 
+.ml_5 {
+    margin-left: 5px;
+}
+
 /* #region *** To remove ***  */
 
 .violet {
@@ -134,14 +138,11 @@ body {
     color: black;
 }
 
-.new_playlist :last-child {
-    margin-left: 5px;
-}
 
 .left_aside>ul {
     list-style: none;
     padding: 0 1rem;
-    row-gap: 1rem;
+    row-gap: 1.5rem;
 }
 
 .left_aside>.aside_bottom {
