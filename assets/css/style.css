@@ -87,6 +87,13 @@ body {
     color: var(--lighter-color);
 }
 
+.left_aside>.aside_playlist {
+    padding: 1rem;
+}
+
+.aside_playlist h3 {
+    color: var(--lighter-color);
+}
 
 
 /* #endregion Aside  */
