@@ -133,11 +133,12 @@ body {
     margin-right: 5px;
 }
 
-.aside_playlist>ul {
+.left_aside>ul {
     list-style: none;
+    padding: 0 1rem;
 }
 
-.aside_playlist>ul li {
+.left_aside>ul li {
     padding: 0.5rem 0;
 }
 
@@ -181,7 +182,8 @@ body {
 
 .left_aside>.logo ,
 .left_aside>.aside_menu,
-.left_aside>.aside_bottom {
+.left_aside>.aside_bottom,
+.left_aside>.aside_playlist {
     flex-grow: 1;
 }
 
@@ -189,7 +191,7 @@ body {
     overflow: hidden;
 }
 
-.left_aside>.aside_playlist {
+.left_aside>.name_playlist {
     flex-grow: 30;
     overflow: auto;
 }
