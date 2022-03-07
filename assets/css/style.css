@@ -3,3 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* #region *** Utility ***  */
+
+.flex {
+    display: flex;
+}
+
+/* #region *** To remove ***  */
+
+.violet {
+    background-color: rgb(255, 147, 255);
+}
+
+.red {
+    background-color: rgb(252, 67, 67);
+}
+
+.green {
+    background-color: rgb(108, 219, 108);
+}
+
+/* #endregion *** To remove ***  */
+
+/* #endregion *** Utility ***  */
+
+/* #region *** Main ***  */
+
+/* #region Aside  */
+
+.left_side {
+    width: 20%;
+    height: calc(100vh - 100px);
+}
+
+/* #endregion Aside  */
+
+/* #region Big_container  */
+
+.big_container {
+    width: 80%;
+    height: calc(100vh - 100px);
+}
+
+/* #endregion Big_container  */
+
+/* #endregion *** Main ***  */
+
+/* #region *** Footer ***  */
+
+footer {
+    height: 100px;
+}
+
+/* #endregion *** footer ***  */
