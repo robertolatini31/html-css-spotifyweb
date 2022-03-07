@@ -183,19 +183,12 @@ body {
     font-weight: 600;
 }
 
-.left_aside>.logo ,
-.left_aside>.aside_menu,
-.left_aside>.aside_bottom,
-.left_aside>.aside_playlist {
-    flex-grow: 1;
-}
-
 .left_aside {
     overflow: hidden;
 }
 
 .left_aside>.name_playlist {
-    flex-grow: 30;
+    flex-grow: 1;
     overflow: auto;
 }
 
@@ -206,6 +199,24 @@ body {
 .big_container {
     width: 80%;
     height: calc(100vh - 100px);
+}
+
+.big_container>.upgrade {
+    width: 100%;
+    padding: 1rem;
+    justify-content: end;
+}
+
+.big_container .btn_upgrade {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.8rem 3rem;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 14px;
+    align-self: flex-end;
 }
 
 /* #endregion Big_container  */
