@@ -1,3 +1,12 @@
+:root {
+    --aside_icon-color: #D2D2D2;
+    --aside_text-color: #717171;
+    --lighter-color: #FFFFFF;
+    --success-color: #ADFF2F;
+
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +15,7 @@
 
 /* #region *** Utility ***  */
 
-.flex {
+.row {
     display: flex;
 }
 
@@ -28,14 +37,53 @@
 
 /* #endregion *** Utility ***  */
 
+/* #region *** Common ***  */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* #endregion *** Common ***  */
+
 /* #region *** Main ***  */
 
 /* #region Aside  */
 
-.left_side {
+.left_aside {
     width: 20%;
     height: calc(100vh - 100px);
 }
+
+.left_aside span {
+    font-weight: 600;
+    color: var(--aside_text-color);
+}
+
+.left_aside>.logo img {
+    max-width: 65%;
+    padding: 1rem;
+}
+
+.aside_menu .aside_menu_items {
+    align-items: center;
+    column-gap: 5px;
+    padding-left: 1rem;
+}
+
+.left_aside>.aside_menu svg {
+    width: 30px;
+    color: var(--aside_icon-color);
+}
+
+.aside_menu>.home {
+    border-left: 3px solid var(--success-color);
+}
+
+.aside_menu>.home span {
+    color: var(--lighter-color);
+}
+
+
 
 /* #endregion Aside  */
 
