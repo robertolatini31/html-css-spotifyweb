@@ -215,6 +215,7 @@ body {
     width: 85%;
     height: calc(100vh - 100px);
     background-color: var(--main-bgcolor);
+    overflow: auto;
 }
 
 .big_container>.upgrade {
@@ -283,7 +284,8 @@ body {
 }
 
 .recently_played>.albums , 
-.create_for_you>.albums {
+.create_for_you>.albums ,
+.more_popular>.albums {
     padding: 1rem;
     column-gap: 1rem;
 }
@@ -295,6 +297,10 @@ body {
 
 .album>img {
     max-width: 100%;
+}
+
+.more_popular img {
+    border-radius: 50%;
 }
 
 /* #endregion Big_container  */
