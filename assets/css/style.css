@@ -3,6 +3,9 @@
     --aside_text-color: #717171;
     --lighter-color: #FFFFFF;
     --success-color: #ADFF2F;
+    --plus_btn-color: #A3A3A3;
+    --profile-bgcolor: #808080;
+
 
 
 }
@@ -17,6 +20,24 @@
 
 .row {
     display: flex;
+}
+
+.direction_col {
+    flex-direction: column;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 /* #region *** To remove ***  */
@@ -54,7 +75,8 @@ body {
     height: calc(100vh - 100px);
 }
 
-.left_aside span {
+.left_aside a {
+    text-decoration: none;
     font-weight: 600;
     color: var(--aside_text-color);
 }
@@ -65,7 +87,6 @@ body {
 }
 
 .left_aside>.aside_menu {
-    flex-direction: column;
     row-gap: 10px;
 }
 
@@ -79,11 +100,16 @@ body {
     width: 30px;
 }
 
+.left_aside path {
+    fill: var(--aside_icon-color);
+}
+
+
 .aside_menu>.home {
     border-left: 3px solid var(--success-color);
 }
 
-.aside_menu>.home span {
+.aside_menu>.home a {
     color: var(--lighter-color);
 }
 
@@ -91,10 +117,82 @@ body {
     padding: 1rem;
 }
 
+.aside_playlist {
+    row-gap: 1rem;
+}
+
 .aside_playlist h3 {
     color: var(--lighter-color);
 }
 
+.new_playlist :first-child {
+    background-color: var(--plus_btn-color);
+    font-size: 25px;
+    padding: 4px;
+    color: black;
+    margin-right: 5px;
+}
+
+.aside_playlist>ul {
+    list-style: none;
+}
+
+.aside_playlist>ul li {
+    padding: 0.5rem 0;
+}
+
+.left_aside>.aside_bottom {
+    bottom: 0;
+    left: 0;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.left_aside>.aside_bottom svg {
+    width: 20px;
+}
+
+.aside_bottom>.download_app {
+    align-items: center;
+    column-gap: 5px;
+}
+
+.aside_bottom>.download_app ,
+.aside_bottom>.profile {
+    padding: 0.5rem 0;
+}
+
+.aside_bottom>.profile {
+    align-items: center;
+    column-gap: 10px;
+}
+
+.aside_bottom>.profile img {
+    background-color: var(--profile-bgcolor);
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.aside_bottom>.profile span {
+    color: var(--lighter-color);
+    font-weight: 600;
+}
+
+.left_aside>.logo ,
+.left_aside>.aside_menu,
+.left_aside>.aside_bottom {
+    flex-grow: 1;
+}
+
+.left_aside {
+    overflow: hidden;
+}
+
+.left_aside>.aside_playlist {
+    flex-grow: 30;
+    overflow: auto;
+}
 
 /* #endregion Aside  */
 
