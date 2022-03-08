@@ -272,12 +272,11 @@ body {
 
 .big_container .navbar ul {
     list-style: none;
+    justify-content: center;
+    column-gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.big_container .navbar li {
-    display: inline-block;
-    padding: 0.5rem;
-}
 
 .navbar a {
     text-decoration: none;
@@ -453,7 +452,7 @@ footer>.menu_central span {
 }
 
 .music_time .time_bar {
-    width: 400px;
+    width: 30vw;
     height: 5px;
     border-radius: 5px;
     background-color: var(--time_bar-bgcolor);
@@ -462,7 +461,7 @@ footer>.menu_central span {
 .time_bar .time_played {
     top: 0;
     left: 0;
-    width: 100px;
+    width: 10vw;
     height: 5px;
     border-radius: 5px;
     background-color: var(--time_bar-color);
@@ -470,7 +469,7 @@ footer>.menu_central span {
 
 .time_bar .ball_time {
     top: -5px;
-    left: 98px;
+    left: 9.8vw;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -498,7 +497,7 @@ footer>.menu_right {
 }
 
 .menu_right .volume_bar {
-    width: 100px;
+    width: 10vw;
     height: 5px;
     border-radius: 5px;
     background-color: var(--time_bar-bgcolor);
@@ -507,7 +506,7 @@ footer>.menu_right {
 .volume_bar .volume_current {
     top: 0;
     left: 0;
-    width: 30px;
+    width: 3vw;
     height: 5px;
     border-radius: 5px;
     background-color: var(--time_bar-color);
@@ -515,7 +514,7 @@ footer>.menu_right {
 
 .volume_bar .ball_volume {
     top: -5px;
-    left: 28px;
+    left: 2.8vw;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -533,8 +532,28 @@ footer>.menu_right {
 
 /* #endregion *** footer ***  */
 
-/* *** Md Query ***  */
+/* #region *** M Query ***  */
 @media  screen and (max-width:1024px) {
+
+    .left_aside {
+        width: 200px;
+    }
+
+    .big_container {
+        width: calc(100% - 200px);
+    }
+
+    .big_container h3 {
+        font-size: 14px;
+    }
+
+    .big_container span {
+        font-size: 12px;
+    }
+
+    .left_aside a {
+        font-size: 12px;
+    }
 
     .albums {
         flex-wrap: wrap;
@@ -542,6 +561,87 @@ footer>.menu_right {
     }
 
     .albums>.album {
-        width: calc(100% / 4.3);
+        width: calc(100% / 4.4);
+    }
+
+    footer i {
+        font-size: 14px;
+    }
+
+    footer img {
+        width: 40px;
+    }
+
+    .menu_left h3 {
+        font-size: 12px;
+    }
+
+    footer span {
+        font-size: 10px;
     }
 }
+/* #endregion *** M Query ***  */
+
+
+/* #region *** S Query ***  */
+
+@media  screen and (max-width:768px) {
+
+    .left_aside {
+        width: 170px;
+    }
+
+    .big_container {
+        width: calc(100% - 170px);
+    }
+
+    .big_container a {
+        font-size: 10px;
+    }
+
+    .albums>.album {
+        width: calc(100% / 3.4);
+    }
+
+    .big_container h2 {
+        font-size: 18px;
+    }
+
+    .big_container h3 {
+        font-size: 10px;
+    }
+
+    .big_container span {
+        font-size: 10px;
+    }
+
+    .left_aside a {
+        font-size: 10px;
+    }
+
+    .aside_playlist h3 {
+        font-size: 12px;
+    }
+
+    .aside_bottom>.profile span {
+        font-size: 12px;
+    }
+
+    footer i {
+        font-size: 12px;
+    }
+
+    footer img {
+        width: 30px;
+    }
+
+    .menu_left h3 {
+        font-size: 10px;
+    }
+
+    footer span {
+        font-size: 8px;
+    }
+}
+/* #endregion *** S Query ***  */
+
