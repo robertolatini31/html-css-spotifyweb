@@ -53,22 +53,6 @@
     padding-left: 1rem;
 }
 
-/* #region *** To remove ***  */
-
-.violet {
-    background-color: rgb(255, 147, 255);
-}
-
-.red {
-    background-color: rgb(252, 67, 67);
-}
-
-.green {
-    background-color: rgb(108, 219, 108);
-}
-
-/* #endregion *** To remove ***  */
-
 /* #endregion *** Utility ***  */
 
 /* #region *** Common ***  */
