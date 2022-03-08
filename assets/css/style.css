@@ -93,7 +93,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     color: var(--aside_text-color);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .left_aside>.logo img {
@@ -138,7 +138,7 @@ body {
 
 .aside_playlist h3 {
     color: var(--lighter-color);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .new_playlist :first-child {
@@ -147,7 +147,6 @@ body {
     padding: 4px;
     color: black;
 }
-
 
 .left_aside>ul {
     list-style: none;
@@ -191,7 +190,7 @@ body {
 .aside_bottom>.profile span {
     color: var(--lighter-color);
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .left_aside {
@@ -224,7 +223,7 @@ body {
 
 .big_container .upgrade {
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
     justify-content: end;
     background-color: var(--upgrade_row-bgcolor);
 }
@@ -239,6 +238,10 @@ body {
     border-radius: 30px;
     font-size: 10px;
     align-self: flex-end;
+}
+
+.btn_upgrade:hover {
+    transform: scale(1.2);
 }
 
 .big_container .navbar {
@@ -276,14 +279,14 @@ body {
 }
 
 .big_container h3 {
-    font-size: 15px;
+    font-size: 1rem;
     padding: 0.5rem;
     color: var(--lighter-color);
 }
 
 .big_container span {
     color: var(--main_menu_text-color);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -295,17 +298,39 @@ body {
 }
 
 .albums>.album {
-    align-items: center;
     width: calc(100% / 6);
 }
 
-.album>img {
+.album a {
+    align-items: center;
+    text-decoration: none;
+}
+
+.album img {
     max-width: 100%;
 }
 
 .more_popular img {
     border-radius: 50%;
 }
+
+#play_img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: var(--lighter-color);
+    display: none;
+}
+
+.album:hover .cover {
+    filter: brightness(0.5);
+}
+
+.album:hover #play_img {
+    display: block;
+}
+
 
 /* #endregion Big_container  */
 
@@ -360,7 +385,7 @@ footer .menu_left {
     color: var(--footer_left_icon-color);
 }
 
-.subtitle_album:hover {
+.subtitle_song:hover {
     text-decoration: underline;
     color: var(--lighter-color);
 }
