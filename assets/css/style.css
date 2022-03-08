@@ -334,6 +334,8 @@ footer span {
     font-weight: 600;
 }
 
+/* *** Menu Left ***  */
+
 .menu_left h3 {
     font-size: 14px;
     font-weight: 600;
@@ -357,6 +359,8 @@ footer .menu_left {
 .menu_left i {
     color: var(--footer_left_icon-color);
 }
+
+/* *** Menu Central ***  */
 
 footer>.menu_central {
     align-items: center;
@@ -397,6 +401,33 @@ footer>.menu_central span {
     top: 0;
     left: 0;
     width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--time_bar-color);
+}
+
+/* *** Menu Right ***  */
+
+footer>.menu_right {
+    column-gap: 10px;
+    align-items: center;
+}
+
+.menu_right i {
+    color: var(--lighter-color);
+}
+
+.menu_right>.volume_bar {
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--time_bar-bgcolor);
+}
+
+.volume_bar>.volume_current {
+    top: 0;
+    left: 0;
+    width: 30px;
     height: 5px;
     border-radius: 5px;
     background-color: var(--time_bar-color);
