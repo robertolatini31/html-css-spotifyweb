@@ -84,7 +84,7 @@ body {
 /* #region Aside  */
 
 .left_aside {
-    width: 15%;
+    width: 200px;
     height: calc(100vh - 100px);
     background-color: var(--darker-color);
 }
@@ -212,7 +212,7 @@ body {
 /* #region Big_container  */
 
 .big_container {
-    width: 85%;
+    width: calc(100% - 200px);
     height: calc(100vh - 100px);
     background-color: var(--main-bgcolor);
     overflow: hidden;
