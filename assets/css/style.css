@@ -11,6 +11,8 @@
     --upgrade_row-bgcolor: #080b128a;
     --footer_left_icon-color: #878787;
     --footer-bgcolor: #282828;
+    --time_bar-bgcolor: #5A5A5A;
+    --time_bar-color: #C1C1C1;
 
 
 
@@ -318,10 +320,6 @@ body {
 footer {
     height: 80px;
     background-color: var(--footer-bgcolor);
-}
-
-footer>.row {
-    height: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
@@ -331,6 +329,11 @@ footer img {
     max-width: 50px;
 }
 
+footer span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
 .menu_left h3 {
     font-size: 14px;
     font-weight: 600;
@@ -338,8 +341,6 @@ footer img {
 }
 
 .menu_left span {
-    font-size: 12px;
-    font-weight: 600;
     color: var(--footer_left_icon-color);
 }
 
@@ -357,5 +358,48 @@ footer .menu_left {
     color: var(--footer_left_icon-color);
 }
 
+footer>.menu_central {
+    align-items: center;
+    row-gap: 5px;
+}
+
+footer>.menu_central i {
+    color: var(--lighter-color);
+}
+
+footer>.menu_central span {
+    color: var(--lighter-color);
+}
+
+.menu_central>.player {
+    column-gap: 2rem;
+    font-size: 20px;
+    align-items: center;
+}
+
+#play {
+    font-size: 30px;
+}
+
+.menu_central>.music_time {
+    column-gap: 10px;
+    align-items: center;
+}
+
+.music_time>.time_bar {
+    width: 400px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--time_bar-bgcolor);
+}
+
+.time_bar>.time_played {
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--time_bar-color);
+}
 
 /* #endregion *** footer ***  */

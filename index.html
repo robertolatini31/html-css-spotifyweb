@@ -288,8 +288,7 @@
     </div>
     <!-- /.wrapper -->
 
-    <footer id="site_footer" class="green">
-        <div class="row">
+    <footer id="site_footer" class="green row">   
 
             <div class="menu_left row">
 
@@ -305,17 +304,36 @@
             </div>
             <!-- /.menu_left -->
 
-            <div class="menu_central">
+            <div class="menu_central row direction_col">
 
+                <div class="player row">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i id="play" class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <!-- /.player -->
 
+                <div class="music_time row">
+                    <span>0.25</span>
+                    <div class="time_bar relative">
+
+                        <div class="time_played absolute"></div>
+                        <!-- /.time_played absolute -->
+
+                    </div>
+                    <!-- /.time_bar -->
+                    <span>4.35</span>
+                </div>
+                <!-- /.music_time -->
 
             </div>
             <!-- /.menu_central -->
-            
+
             <div class="menu_right">RIGHT</div>
             <!-- /.menu_right -->
-        </div>
-        <!-- /.row -->
+
     </footer>
     <!-- /#site_footer -->
     
