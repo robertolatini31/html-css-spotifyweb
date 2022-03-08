@@ -9,6 +9,8 @@
     --main_menu_text-color: #7D7F84;
     --main-bgcolor: #141922;
     --upgrade_row-bgcolor: #080b128a;
+    --footer_left_icon-color: #878787;
+    --footer-bgcolor: #282828;
 
 
 
@@ -85,7 +87,7 @@ body {
 
 .left_aside {
     width: 200px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     background-color: var(--darker-color);
 }
 
@@ -213,7 +215,7 @@ body {
 
 .big_container {
     width: calc(100% - 200px);
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     background-color: var(--main-bgcolor);
     overflow: hidden;
 }
@@ -314,7 +316,8 @@ body {
 /* #region *** Footer ***  */
 
 footer {
-    height: 100px;
+    height: 80px;
+    background-color: var(--footer-bgcolor);
 }
 
 footer>.row {
@@ -328,12 +331,30 @@ footer img {
     max-width: 50px;
 }
 
+.menu_left h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--lighter-color);
+}
+
+.menu_left span {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--footer_left_icon-color);
+}
+
 footer .menu_left {
     column-gap: 10px;
+    align-items: center;
 }
 
 .menu_left>.song_name {
     justify-content: center;
+    margin-right: 1rem;
+}
+
+.menu_left i {
+    color: var(--footer_left_icon-color);
 }
 
 
