@@ -19,7 +19,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.5s;
 }
 
 /* #region *** Utility ***  */
@@ -398,6 +397,10 @@ footer>.menu_central span {
     font-size: 30px;
 }
 
+#play:hover {
+   transform: scale(1.1);
+}
+
 .menu_central .music_time {
     column-gap: 10px;
     align-items: center;
@@ -417,6 +420,24 @@ footer>.menu_central span {
     height: 5px;
     border-radius: 5px;
     background-color: var(--time_bar-color);
+}
+
+.time_bar .ball_time {
+    top: -5px;
+    left: 98px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--lighter-color);
+    display: none;
+}
+
+.time_bar:hover .time_played {
+    background-color: var(--success-color);
+}
+
+.time_bar:hover .ball_time {
+    display: block;
 }
 
 /* *** Menu Right ***  */
@@ -444,6 +465,24 @@ footer>.menu_right {
     height: 5px;
     border-radius: 5px;
     background-color: var(--time_bar-color);
+}
+
+.volume_bar .ball_volume {
+    top: -5px;
+    left: 28px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--lighter-color);
+    display: none;
+}
+
+.volume_bar:hover .volume_current {
+    background-color: var(--success-color);
+}
+
+.volume_bar:hover .ball_volume {
+    display: block;
 }
 
 /* #endregion *** footer ***  */
