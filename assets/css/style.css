@@ -68,7 +68,7 @@ body {
 /* #region Aside  */
 
 .left_aside {
-    width: 200px;
+    width: 250px;
     height: calc(100vh - 80px);
     background-color: var(--darker-color);
 }
@@ -232,7 +232,7 @@ body {
 /* #region Big_container  */
 
 .big_container {
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     height: calc(100vh - 80px);
     background-color: var(--main-bgcolor);
     overflow: hidden;
@@ -532,3 +532,16 @@ footer>.menu_right {
 }
 
 /* #endregion *** footer ***  */
+
+/* *** Md Query ***  */
+@media  screen and (max-width:1024px) {
+
+    .albums {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+
+    .albums>.album {
+        width: calc(100% / 4.3);
+    }
+}
