@@ -129,7 +129,8 @@ body {
 }
 
 .left_aside>.aside_playlist {
-    padding: 1rem;
+    padding: 1.5rem 0 1.5rem 1rem;
+    
 }
 
 .aside_playlist {
@@ -141,7 +142,7 @@ body {
     font-size: 14px;
 }
 
-.new_playlist :first-child {
+.new_playlist #new_playlist_i {
     background-color: var(--plus_btn-color);
     font-size: 20px;
     padding: 4px;
@@ -204,6 +205,42 @@ body {
 
 .aside_bottom hr {
     border-color: var(--aside_text-color);
+}
+
+/* *** Hover Aside ***  */
+
+.home:hover #home_path ,
+.search:hover #search_path ,
+.library:hover #library_path 
+{
+    fill: var(--lighter-color);
+}
+
+.home:hover #home_a ,
+.search:hover #search_a ,
+.library:hover #library_a
+{
+    color: var(--lighter-color);
+}
+
+.new_playlist:hover #new_playlist_i {
+    background-color: var(--lighter-color);
+}
+
+.new_playlist:hover #new_playlist_a {
+    color: var(--lighter-color);
+}
+
+.name_playlist>li:hover .playlist {
+    color: var(--lighter-color);
+}
+
+.download_app:hover #download_path {
+    fill: var(--lighter-color);
+}
+
+.download_app:hover #download_a {
+    color: var(--lighter-color);
 }
 
 /* #endregion Aside  */
