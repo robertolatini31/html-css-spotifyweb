@@ -275,6 +275,7 @@ body {
     justify-content: center;
     column-gap: 1rem;
     flex-wrap: wrap;
+    row-gap: 1rem;
 }
 
 
@@ -405,6 +406,10 @@ footer .menu_left {
     color: var(--footer_left_icon-color);
 }
 
+.icon_menu_left {
+    column-gap: 10px;
+}
+
 .subtitle_song:hover {
     text-decoration: underline;
     color: var(--lighter-color);
@@ -497,7 +502,7 @@ footer>.menu_right {
 }
 
 .menu_right .volume_bar {
-    width: 10vw;
+    width: 6vw;
     height: 5px;
     border-radius: 5px;
     background-color: var(--time_bar-bgcolor);
@@ -506,7 +511,7 @@ footer>.menu_right {
 .volume_bar .volume_current {
     top: 0;
     left: 0;
-    width: 3vw;
+    width: 1.8vw;
     height: 5px;
     border-radius: 5px;
     background-color: var(--time_bar-color);
@@ -514,7 +519,7 @@ footer>.menu_right {
 
 .volume_bar .ball_volume {
     top: -5px;
-    left: 2.8vw;
+    left: 1.7vw;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -583,7 +588,7 @@ footer>.menu_right {
 /* #endregion *** M Query ***  */
 
 
-/* #region *** S Query ***  */
+/* #region *** M-S Query ***  */
 
 @media  screen and (max-width:768px) {
 
@@ -643,5 +648,71 @@ footer>.menu_right {
         font-size: 8px;
     }
 }
-/* #endregion *** S Query ***  */
+/* #endregion *** M-S Query ***  */
 
+/* #region *** S Query ***  */
+
+@media  screen and (max-width:566px) {
+
+    .left_aside {
+        width: 170px;
+    }
+
+    .big_container {
+        width: calc(100% - 170px);
+    }
+
+    .big_container a {
+        font-size: 8px;
+    }
+
+    .albums>.album {
+        width: calc(100% / 2.4);
+    }
+
+    .big_container h2 {
+        font-size: 16px;
+    }
+
+    .big_container h3 {
+        font-size: 8px;
+    }
+
+    .big_container span {
+        font-size: 8px;
+    }
+
+    .left_aside a {
+        font-size: 8px;
+    }
+
+    .aside_playlist h3 {
+        font-size: 10px;
+    }
+
+    .aside_bottom>.profile span {
+        font-size: 10px;
+    }
+
+    footer i {
+        font-size: 10px;
+    }
+
+    footer img {
+        width: 20px;
+    }
+
+    .menu_left h3 {
+        font-size: 8px;
+    }
+
+    footer span {
+        font-size: 6px;
+    }
+
+    .icon_menu_left {
+        flex-direction: column;
+    }
+}
+
+/* #endregion *** S Query ***  */
