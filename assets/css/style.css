@@ -268,10 +268,6 @@ body {
     align-self: flex-end;
 }
 
-.btn_upgrade:hover {
-    transform: scale(1.2);
-}
-
 .big_container .navbar {
     width: 100%;
     justify-content: center;
@@ -284,7 +280,6 @@ body {
     flex-wrap: wrap;
     row-gap: 1rem;
 }
-
 
 .navbar a {
     text-decoration: none;
@@ -352,12 +347,20 @@ body {
     display: none;
 }
 
+.btn_upgrade:hover {
+    transform: scale(1.2);
+}
+
 .album:hover .cover {
     filter: brightness(0.5);
 }
 
 .album:hover #play_img {
     display: block;
+}
+
+.navbar_li:hover .navbar_a {
+    color: var(--lighter-color);
 }
 
 
