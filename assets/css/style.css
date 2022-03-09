@@ -382,7 +382,7 @@ footer span {
     font-weight: 600;
 }
 
-/* *** Menu Left ***  */
+/* #region *** Menu Left ***  */
 
 .menu_left h3 {
     font-size: 14px;
@@ -425,9 +425,9 @@ footer .menu_left {
     color: var(--lighter-color);
 }
 
+/* #endregion *** Menu Left ***  */
 
-
-/* *** Menu Central ***  */
+/* #region *** Menu Central ***  */
 
 footer>.menu_central {
     align-items: center;
@@ -494,7 +494,9 @@ footer>.menu_central span {
     background-color: var(--lighter-color);
 }
 
-/* *** Menu Right ***  */
+/* #endregion *** Menu Central ***  */
+
+/* #region *** Menu Right ***  */
 
 footer>.menu_right {
     column-gap: 10px;
@@ -537,6 +539,8 @@ footer>.menu_right {
 .volume_bar:hover .ball_volume {
     background-color: var(--lighter-color);
 }
+
+/* #endregion *** Menu Right ***  */
 
 /* #endregion *** footer ***  */
 
