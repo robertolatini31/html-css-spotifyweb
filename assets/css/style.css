@@ -54,6 +54,12 @@
     padding-left: 1rem;
 }
 
+@keyframes mini_rotation {
+    00% {transform: rotate(0deg);}
+    80%{transform: rotate(90deg);}
+    100%{transform: rotate(0deg);}
+}
+
 /* #endregion *** Utility ***  */
 
 /* #region *** Common ***  */
@@ -352,6 +358,11 @@ body {
     transform: scale(1.2);
 }
 
+.btn_upgrade:active {
+    color: goldenrod;
+    border: 1px solid goldenrod;
+}
+
 .album:hover .cover {
     filter: brightness(0.5);
 }
@@ -435,6 +446,11 @@ footer .menu_left {
     color: var(--lighter-color);
 }
 
+.heart:active {
+    color: red;
+}
+
+
 /* #endregion *** Menu Left ***  */
 
 /* #region *** Menu Central ***  */
@@ -464,6 +480,10 @@ footer>.menu_central span {
 
 #play:hover {
    transform: scale(1.1);
+}
+
+#play:active {
+    color: var(--success-color);
 }
 
 .menu_central .music_time {
@@ -502,6 +522,11 @@ footer>.menu_central span {
 
 .time_bar:hover .ball_time {
     background-color: var(--lighter-color);
+}
+
+#rotate_arrow:active {
+    animation-name: mini_rotation;
+    animation-duration: 0.5s;
 }
 
 /* #endregion *** Menu Central ***  */
