@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s;
 }
 
 /* #region *** Utility ***  */
@@ -481,8 +482,7 @@ footer>.menu_central span {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: var(--lighter-color);
-    display: none;
+    background-color: transparent;
 }
 
 .time_bar:hover .time_played {
@@ -490,7 +490,7 @@ footer>.menu_central span {
 }
 
 .time_bar:hover .ball_time {
-    display: block;
+    background-color: var(--lighter-color);
 }
 
 /* *** Menu Right ***  */
@@ -526,8 +526,7 @@ footer>.menu_right {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: var(--lighter-color);
-    display: none;
+    background-color: transparent;
 }
 
 .volume_bar:hover .volume_current {
@@ -535,7 +534,7 @@ footer>.menu_right {
 }
 
 .volume_bar:hover .ball_volume {
-    display: block;
+    background-color: var(--lighter-color);
 }
 
 /* #endregion *** footer ***  */
@@ -781,6 +780,22 @@ footer>.menu_right {
     .menu_central>.player {
         column-gap: 1.7rem;
     }
+
+    .time_bar .ball_time ,
+    .volume_bar .ball_volume
+    {
+        width: 10px;
+        height: 10px;
+        top: -3px;
+    }
+
+    .time_bar .ball_time {
+        left: 9.4vw;
+    }
+    .volume_bar .ball_volume {
+        left: 1.4vw;
+    }
+
 }
 
 /* #endregion *** S Query ***  */
@@ -790,11 +805,11 @@ footer>.menu_right {
 @media  screen and (max-width:425px) {
 
     .left_aside {
-        width: 60px;
+        width: 50px;
     }
 
     .big_container {
-        width: calc(100% - 60px);
+        width: calc(100% - 50px);
     }
 
     .menu_central>.player {
@@ -834,7 +849,7 @@ footer>.menu_right {
     }
 
     .left_aside>.aside_menu svg {
-        width: 25px;
+        width: 22px;
     }
 
     .aside_bottom>.download_app, 
@@ -842,11 +857,62 @@ footer>.menu_right {
     {
         justify-content:center ;
     }
+    
+    .music_time .time_bar {
+        width: 20vw;
+    }
 
+    .time_bar .time_played {
+        width: 3vw;
+    }
+
+    .time_bar .ball_time {
+        left: 2.8vw;
+    }
+
+    footer>.menu_left ,
+    footer>.menu_right
+    {
+        column-gap: 5px;
+    }
+
+    footer img {
+        width: 20px;
+    }
+
+    .menu_central>.player {
+        column-gap: 0.7rem;
+    }
+
+    .left_aside>.name_playlist {
+        overflow-y: hidden;
+    }
+    
 }
 
 
 /* #endregion *** XS Query ***  */
 
+/* #region *** XXS Query ***  */
+
+@media  screen and (max-width:320px) {
+
+    .albums>.album {
+        width: 100%;
+    }
+
+    .menu_right .volume_bar ,
+    #shuffle ,
+    #rotate_arrow ,
+    .menu_left .heart ,
+    .menu_left .folder
+     {
+        display: none;
+    }
+
+}
+
+
+/* #endregion *** XXS Query ***  */
 
 /* #endregion *** Media Query ***  */
