@@ -431,7 +431,7 @@ footer .menu_left {
 
 footer>.menu_central {
     align-items: center;
-    row-gap: 5px;
+    row-gap: 15px;
 }
 
 footer>.menu_central i {
@@ -746,10 +746,6 @@ footer>.menu_right {
 
     .aside_bottom>.profile span {
         font-size: 10px;
-    }
-
-    footer i {
-        font-size: 12px;
     }
 
     #play {
