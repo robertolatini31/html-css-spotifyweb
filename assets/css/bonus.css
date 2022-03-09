@@ -1,0 +1,414 @@
+/* #region *** Media Query ***  */
+
+@media screen and (max-height: 300px) {
+    .big_container>.upgrade {
+        display: none;
+    }
+}
+
+/* #region *** L Query ***  */
+
+@media  screen and (max-width:1440px) {
+    .big_container h3 {
+        font-size: 13px;
+    }
+
+    .big_container span {
+        font-size: 12px;
+    }
+
+}
+
+/* #endregion *** L Query ***  */
+
+/* #region *** M Query ***  */
+@media  screen and (max-width:1024px) {
+
+    .left_aside {
+        width: 200px;
+    }
+
+    .big_container {
+        width: calc(100% - 200px);
+    }
+
+    .left_aside a {
+        font-size: 12px;
+    }
+
+    .left_aside>.aside_bottom svg {
+        width: 14px;
+    }
+
+    /* .albums {
+        flex-wrap: wrap;
+    } */
+
+    .albums>.album {
+        width: calc(100% / 4);
+    }
+
+    .delete_first {
+        display: none;
+    }
+
+    footer img {
+        width: 40px;
+    }
+
+    .menu_left h3 {
+        font-size: 12px;
+    }
+
+    footer span ,
+    .menu_left .subtitle_song
+    {
+        font-size: 10px;
+    }
+
+
+
+}
+/* #endregion *** M Query ***  */
+
+/* #region *** M-S Query ***  */
+
+@media  screen and (max-width:768px) {
+
+    .left_aside {
+        width: 170px;
+    }
+
+    .big_container {
+        width: calc(100% - 170px);
+    }
+
+    .big_container .btn_upgrade {
+        font-size: 9px;
+    }
+
+    .big_container a {
+        font-size: 10px;
+    }
+
+    .albums>.album {
+        width: calc(100% / 3);
+    }
+
+    .delete_second {
+        display: none;
+    }
+
+    .big_container h2 {
+        font-size: 18px;
+    }
+
+    .big_container h3 {
+        font-size: 12px;
+    }
+
+    .big_container span {
+        font-size: 11px;
+    }
+
+    .left_aside a {
+        font-size: 12px;
+    }
+
+    .aside_playlist h3 {
+        font-size: 10px;
+    }
+
+    .aside_bottom>.profile img{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .aside_bottom>.profile span {
+        font-size: 12px;
+    }
+
+    footer i {
+        font-size: 14px;
+    }
+
+    #play {
+        font-size: 25px;
+    }
+
+    footer img {
+        width: 30px;
+    }
+
+    .menu_left h3 {
+        font-size: 10px;
+    }
+
+    footer span ,
+    .menu_left .subtitle_song 
+    {
+        font-size: 8px;
+    }
+}
+/* #endregion *** M-S Query ***  */
+
+/* #region *** S Query ***  */
+
+@media  screen and (max-width:566px) {
+
+    .left_aside {
+        width: 170px;
+    }
+
+    .big_container {
+        width: calc(100% - 170px);
+    }
+
+    .big_container .btn_upgrade {
+        font-size: 8px;
+    }
+
+    .big_container a {
+        font-size: 8px;
+    }
+
+    .albums>.album {
+        width: calc(100% / 2);
+    }
+
+    .delete_third {
+        display: none;
+    }
+
+    .big_container h2 {
+        font-size: 16px;
+    }
+
+    .left_aside a {
+        font-size: 10px;
+    }
+
+    .aside_playlist h3 {
+        font-size: 10px;
+    }
+
+    .aside_bottom>.profile img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .left_aside>.aside_bottom svg {
+        width: 12px;
+    }
+
+    .aside_bottom>.profile span {
+        font-size: 10px;
+    }
+
+    #play {
+        font-size: 20px;
+    }
+
+    footer img {
+        width: 25px;
+    }
+
+    .menu_left h3 {
+        font-size: 8px;
+    }
+
+    .menu_left>.song_name {
+        margin-right: 0;
+    }
+
+    footer span , 
+    .menu_left .subtitle_song
+    {
+        font-size: 7px;
+    }
+
+    .icon_menu_left {
+        flex-direction: column;
+    }
+
+    .menu_central>.player {
+        column-gap: 1.7rem;
+    }
+
+    .time_bar .ball_time ,
+    .volume_bar .ball_volume
+    {
+        width: 10px;
+        height: 10px;
+        top: -3px;
+    }
+
+    .time_bar .ball_time {
+        left: 9.4vw;
+    }
+    .volume_bar .ball_volume {
+        left: 1.4vw;
+    }
+
+}
+
+/* #endregion *** S Query ***  */
+
+/* #region *** XS Query ***  */
+
+@media  screen and (max-width:425px) {
+
+    .left_aside {
+        width: 50px;
+    }
+
+    .big_container {
+        width: calc(100% - 50px);
+    }
+
+    .menu_central>.player {
+        column-gap: 1.2rem;
+    }
+
+    .left_aside a ,
+    .aside_playlist h3 ,
+    #logo_big ,
+    .aside_bottom hr ,
+    .aside_bottom>.profile span
+    {
+        display: none;
+    }
+
+    #logo_small {
+        display: block;
+    }
+
+    .aside_menu>.home {
+        border: none;
+    }
+
+    .left_aside>.logo img ,
+    .aside_menu .aside_menu_items 
+    {
+        padding: 0.5rem;
+    }
+
+    .left_aside>.logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left_aside>.aside_menu {
+        align-items: center;
+    }
+
+    .left_aside>.aside_menu svg {
+        width: 22px;
+    }
+
+    .aside_bottom>.download_app, 
+    .aside_bottom>.profile 
+    {
+        justify-content:center ;
+    }
+    
+    .music_time .time_bar {
+        width: 20vw;
+    }
+
+    .time_bar .time_played {
+        width: 3vw;
+    }
+
+    .time_bar .ball_time {
+        left: 2.8vw;
+    }
+
+    footer>.menu_left ,
+    footer>.menu_right
+    {
+        column-gap: 5px;
+    }
+
+    footer img {
+        width: 20px;
+    }
+
+    .menu_central>.player {
+        column-gap: 0.7rem;
+    }
+
+    .left_aside>.name_playlist {
+        overflow-y: hidden;
+    }
+
+    .left_aside>.aside_bottom svg {
+        width: 16px;
+    }
+
+    .left_aside>.aside_bottom {
+        padding: 0;
+    }
+    
+}
+
+
+/* #endregion *** XS Query ***  */
+
+/* #region *** XXS Query ***  */
+
+@media  screen and (max-width:320px) {
+
+    .left_aside {
+        width: 40px;
+    }
+
+    .big_container {
+        width: calc(100% - 40px);
+    }
+
+    #logo_small {
+        max-width: 40px;
+    }
+
+    .left_aside>.aside_menu svg {
+        width: 18px;
+    }
+
+    .albums>.album {
+        width: 100%;
+    }
+
+    .delete_fourth {
+        display: none;
+    } 
+
+    .menu_right .volume_bar ,
+    #shuffle ,
+    #rotate_arrow ,
+    .menu_left .heart ,
+    .menu_left .folder ,
+    #list_icon
+     {
+        display: none;
+    }
+
+    footer>.menu_left, 
+    footer>.menu_right 
+    {
+        column-gap: 10px;
+    }
+
+    .menu_central>.player {
+        column-gap: 1rem;
+    }
+
+    .albums>.album {
+        padding: 2rem;
+    }
+}
+
+
+/* #endregion *** XXS Query ***  */
+
+/* #endregion *** Media Query ***  */
