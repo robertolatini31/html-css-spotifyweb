@@ -324,6 +324,12 @@ body {
     padding: 1rem;
 }
 
+.create_for_you .album ,
+.more_popular .album 
+{
+    align-items: center;
+}
+
 .album a {
     align-items: center;
     text-decoration: none;
@@ -559,6 +565,10 @@ footer>.menu_right {
         font-size: 13px;
     }
 
+    .big_container span {
+        font-size: 12px;
+    }
+
 }
 
 /* #endregion *** L Query ***  */
@@ -574,14 +584,6 @@ footer>.menu_right {
         width: calc(100% - 200px);
     }
 
-    .big_container h3 {
-        font-size: 13px;
-    }
-
-    .big_container span {
-        font-size: 12px;
-    }
-
     .left_aside a {
         font-size: 12px;
     }
@@ -592,7 +594,6 @@ footer>.menu_right {
 
     .albums {
         flex-wrap: wrap;
-        row-gap: 1rem;
     }
 
     .albums>.album {
@@ -647,11 +648,11 @@ footer>.menu_right {
     }
 
     .big_container h3 {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .big_container span {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .left_aside a {
@@ -721,14 +722,6 @@ footer>.menu_right {
 
     .big_container h2 {
         font-size: 16px;
-    }
-
-    .big_container h3 {
-        font-size: 10px;
-    }
-
-    .big_container span {
-        font-size: 8px;
     }
 
     .left_aside a {
@@ -888,6 +881,14 @@ footer>.menu_right {
     .left_aside>.name_playlist {
         overflow-y: hidden;
     }
+
+    .left_aside>.aside_bottom svg {
+        width: 16px;
+    }
+
+    .left_aside>.aside_bottom {
+        padding: 0;
+    }
     
 }
 
@@ -897,6 +898,22 @@ footer>.menu_right {
 /* #region *** XXS Query ***  */
 
 @media  screen and (max-width:320px) {
+
+    .left_aside {
+        width: 40px;
+    }
+
+    .big_container {
+        width: calc(100% - 40px);
+    }
+
+    #logo_small {
+        max-width: 40px;
+    }
+
+    .left_aside>.aside_menu svg {
+        width: 18px;
+    }
 
     .albums>.album {
         width: 100%;
@@ -920,6 +937,10 @@ footer>.menu_right {
 
     .menu_central>.player {
         column-gap: 1rem;
+    }
+
+    .albums>.album {
+        padding: 2rem;
     }
 }
 
