@@ -85,6 +85,11 @@ body {
     padding: 1rem;
 }
 
+#logo_small {
+    max-width: 50px;
+    display: none;
+}
+
 .left_aside>.aside_menu {
     row-gap: 10px;
 }
@@ -621,6 +626,10 @@ footer>.menu_right {
         width: calc(100% - 170px);
     }
 
+    .big_container .btn_upgrade {
+        font-size: 9px;
+    }
+
     .big_container a {
         font-size: 10px;
     }
@@ -684,7 +693,6 @@ footer>.menu_right {
 
 /* #region *** S Query ***  */
 
-
 @media  screen and (max-width:566px) {
 
     .left_aside {
@@ -693,6 +701,10 @@ footer>.menu_right {
 
     .big_container {
         width: calc(100% - 170px);
+    }
+
+    .big_container .btn_upgrade {
+        font-size: 8px;
     }
 
     .big_container a {
@@ -752,6 +764,10 @@ footer>.menu_right {
         font-size: 8px;
     }
 
+    .menu_left>.song_name {
+        margin-right: 0;
+    }
+
     footer span , 
     .menu_left .subtitle_song
     {
@@ -761,8 +777,76 @@ footer>.menu_right {
     .icon_menu_left {
         flex-direction: column;
     }
+
+    .menu_central>.player {
+        column-gap: 1.7rem;
+    }
 }
 
 /* #endregion *** S Query ***  */
+
+/* #region *** XS Query ***  */
+
+@media  screen and (max-width:425px) {
+
+    .left_aside {
+        width: 60px;
+    }
+
+    .big_container {
+        width: calc(100% - 60px);
+    }
+
+    .menu_central>.player {
+        column-gap: 1.2rem;
+    }
+
+    .left_aside a ,
+    .aside_playlist h3 ,
+    #logo_big ,
+    .aside_bottom hr ,
+    .aside_bottom>.profile span
+    {
+        display: none;
+    }
+
+    #logo_small {
+        display: block;
+    }
+
+    .aside_menu>.home {
+        border: none;
+    }
+
+    .left_aside>.logo img ,
+    .aside_menu .aside_menu_items 
+    {
+        padding: 0.5rem;
+    }
+
+    .left_aside>.logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left_aside>.aside_menu {
+        align-items: center;
+    }
+
+    .left_aside>.aside_menu svg {
+        width: 25px;
+    }
+
+    .aside_bottom>.download_app, 
+    .aside_bottom>.profile 
+    {
+        justify-content:center ;
+    }
+
+}
+
+
+/* #endregion *** XS Query ***  */
+
 
 /* #endregion *** Media Query ***  */
