@@ -271,6 +271,7 @@ body {
 .big_container .navbar {
     width: 100%;
     justify-content: center;
+    padding: 1rem;
 }
 
 .big_container .navbar ul {
