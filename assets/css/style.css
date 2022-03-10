@@ -345,13 +345,13 @@ body {
     border-radius: 50%;
 }
 
-#play_img {
+.play_img {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 50px;
     color: var(--lighter-color);
-    display: none;
+    display: none !important;
 }
 
 .btn_upgrade:hover {
@@ -367,8 +367,8 @@ body {
     filter: brightness(0.5);
 }
 
-.album:hover #play_img {
-    display: block;
+.album:hover .play_img {
+    display: block !important;
 }
 
 .navbar_li:hover .navbar_a {
