@@ -375,6 +375,11 @@ body {
     color: var(--lighter-color);
 }
 
+.scroll nav ,
+.scroll section {
+    max-width: 1920px;
+}
+
 
 /* #endregion Big_container  */
 
