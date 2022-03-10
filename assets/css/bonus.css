@@ -42,8 +42,12 @@
 
 @media  screen and (max-width:320px) {
 
-    .delete_fourth {
-        display: none;
+    .albums {
+        flex-wrap: wrap;
+    }
+
+    [class^="delete_"] {
+        display: block;
     } 
 
 }
