@@ -375,6 +375,10 @@ body {
     color: var(--lighter-color);
 }
 
+.subtitle_album:hover {
+    color: var(--success-color);
+}
+
 .scroll nav ,
 .scroll section {
     max-width: 1920px;
@@ -487,10 +491,6 @@ footer>.menu_central span {
    transform: scale(1.1);
 }
 
-#play:active {
-    color: var(--success-color);
-}
-
 .menu_central .music_time {
     column-gap: 10px;
     align-items: center;
@@ -532,6 +532,10 @@ footer>.menu_central span {
 #rotate_arrow:active {
     animation-name: mini_rotation;
     animation-duration: 0.5s;
+}
+
+.menu_central i:hover  {
+    color: var(--success-color);
 }
 
 /* #endregion *** Menu Central ***  */
@@ -578,6 +582,10 @@ footer>.menu_right {
 
 .volume_bar:hover .ball_volume {
     background-color: var(--lighter-color);
+}
+
+.menu_right i:hover  {
+    color: var(--success-color);
 }
 
 /* #endregion *** Menu Right ***  */
