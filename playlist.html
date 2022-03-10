@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playlist</title>
+    <link rel="stylesheet" href="./assets/css/play_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div  class="wrapper row">
+
+        <aside class="left_aside row direction_col">
+
+            <div class="logo">
+                <img id="logo_big" src="./assets/img/logo.svg" alt="">
+                <img id="logo_small" src="./assets/img/logo-small.svg" alt="">
+            </div>
+            <!-- /.logo -->
+
+            <div class="aside_menu row direction_col">
+
+                <div class="home aside_menu_items row">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path id="home_path" d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>
+                    <a id="home_a" href="#">Home</a>
+                </div>
+                <!-- /.home -->
+
+                <div class="search aside_menu_items row">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path id="search_path" d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg>
+                    <a id="search_a" href="#">Cerca</a>
+                </div>
+                <!-- /.Search -->
+
+                <div class="library aside_menu_items row">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path id="library_path" d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/></svg>
+                    <a id="library_a" href="#">La tua libreria</a>
+                </div>
+                <!-- /.Library -->
+
+
+            </div>
+            <!-- /.aside_menu -->
+
+            <div class="aside_playlist row direction_col">
+
+                <h3 class="title_playlist">PLAYLIST</h3>
+                <!-- /.title_playlist -->
+
+                <div class="new_playlist">
+                    <a href="#"><i id="new_playlist_i" class="fa-solid fa-plus"></i></a>
+                    <a id="new_playlist_a" class="ml_5" href="#">Crea Playlist</a>
+                </div>
+                <!-- /.new_playlist -->
+
+            </div>
+            <!-- /.aside_playlist -->
+
+            <ul class="name_playlist row direction_col">
+                <li>
+                    <a class="playlist" href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a class="playlist" href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a class="playlist" href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a class="playlist" href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a class="playlist" href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a class="playlist" href="#">Nome Playlist</a>
+                </li>
+                <li>
+                    <a class="playlist" href="#">Nome Playlist</a>
+                </li>
+            </ul>
+            <!-- /.list_your_playlist -->
+
+            <div class="aside_bottom">
+
+                <div class="download_app row">
+
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path id="download_path" d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="#ffffff" fill-rule="evenodd"/></svg>
+                    <a id="download_a" href="#">Installa app</a>
+
+                </div>
+                <!-- /.download_app -->
+
+            </div>
+            <!-- /.aside_bottom row -->
+
+        </aside>
+        <!-- /.left_side -->
+
+        <main class="big_container row direction_col">
+         
+                <div class="upgrade row">
+
+                    <div class="row">
+                        <a href="#" class="btn_small">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </a>
+                        <!-- /.btn_small -->
+    
+                        <a href="#" class="btn_small">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <!-- /.btn_small -->
+                    </div>
+                    <!-- small_btn -->
+
+                    <div class="row">
+                        <a href="#" class="btn_upgrade">UPGRADE</a>
+                    <!-- /.btn_upgrade -->
+
+                    <a href="#" class="btn_upgrade btn_log">
+                        <img src="./assets/img/profile.svg" alt="">
+                        <span>fab_sky_walker</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <!-- /.btn_upgrade -->
+                    </div>
+                    <!-- big_btn -->
+    
+                </div>
+                <!-- /.upgrade -->
+              
+            <div class="scroll">
+
+                <nav class="navbar row">
+
+                    <ul class="row">
+                        <li class="navbar_li">
+                            <a href="#" class="navbar_a">IN EVIDENZA</a>
+                            <hr>
+                        </li>
+                        <li class="navbar_li">
+                            <a href="#" class="navbar_a">PODCAST</a>
+                        </li>
+                        <li class="navbar_li">
+                            <a href="#" class="navbar_a">CLASSIFICHE</a>
+                        </li>
+                        <li class="navbar_li">
+                            <a href="#" class="navbar_a">GENERI E MOODA</a>
+                        </li>
+                        <li class="navbar_li">
+                            <a href="#" class="navbar_a">NUOVE USCITE</a>
+                        </li>
+                        <li class="navbar_li">
+                            <a href="#" class="navbar_a">SCOPRI</a>
+                        </li>
+                    </ul>
+    
+                </nav>
+                <!-- /.navbar -->
+    
+                <section class="recently_played">
+    
+                    <h2>Recently played</h2>
+    
+                    <div class="albums row">
+    
+                        
+                         <div class="album row">
+
+                             <a href="#" class="row direction_col">
+                                <div class="relative">
+                                    <img class="cover" src="./assets/img/metal_lifting.jpg" alt="">
+                                    <i class="fa-regular fa-circle-play absolute play_img"></i>
+                                </div>
+                                <h3 class="title_album">Heavy Metal</h3>
+                                <span class="subtitle_album">Subtitle</span>
+                             </a>
+
+                        </div>
+                        <!-- /.album -->
+                       
+    
+                        <div class="delete_fourth album row">
+    
+                            <a href="#" class="row direction_col">
+                                <div class="relative">
+                                    <img class="cover" src="./assets/img/stranger.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play absolute play_img"></i>
+                                </div>
+                                <h3 class="title_album">Stranger Things, Vol. 1 (a Netflix Original Series soundtrack)</h3>
+                                <span class="subtitle_album">Kyle Dixon & Michael Stein</span>
+                            </a>
+    
+                        </div>
+                        <!-- /.album -->
+    
+                        <div class="delete_third album row">
+    
+                            <a href="#" class="row direction_col">
+                                <div class="relative">
+                                    <img class="cover" src="./assets/img/aquietplace.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play absolute play_img"></i>
+                                </div>
+                                <h3 class="title_album">A quiet place</h3>
+                                <span class="subtitle_album">Subtitle</span>
+                            </a>
+    
+                        </div>
+                        <!-- /.album -->
+    
+                        <div class="delete_second album row">
+    
+                            <a href="#" class="row direction_col">
+                                <div class="relative">
+                                    <img class="cover" src="./assets/img/split.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play absolute play_img"></i>
+                                </div>
+                                <h3 class="title_album">Split</h3>
+                                <span class="subtitle_album">Subtitle</span>
+                            </a>
+    
+                        </div>
+                        <!-- /.album -->
+    
+                        <div class="delete_first album row">
+    
+                           <a href="#" class="row direction_col">
+                                <div class="relative">
+                                    <img class="cover" src="./assets/img/cure.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play absolute play_img"></i>
+                                </div>
+                                <h3 class="title_album">A cure for wellness</h3>
+                                <span class="subtitle_album">Subtitle</span>
+                           </a>
+    
+                        </div>
+                        <!-- /.album -->
+    
+                        <div class="delete_first album row">
+    
+                            <a href="#" class="row direction_col">
+                                <div class="relative">
+                                    <img class="cover" src="./assets/img/sinister.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play absolute play_img"></i>
+                                </div>
+                                <h3 class="title_album">Sinister</h3>
+                                <span class="subtitle_album">Subtitle</span>
+                            </a>
+    
+                        </div>
+                        <!-- /.album -->
+    
+                    </div>
+                    <!-- /.almbums row -->
+    
+                </section>
+                <!-- /.recently_played -->
+    
+                <section class="create_for_you">
+    
+                    <h2>Creato per John Doe</h2>
+                    <span class="pl_1rem row">Più ascolti, più accurati saranno i suggerimenti.</span>
+    
+                    <div class="albums row">
+
+                        <div class="album row">
+
+                            <a href="#" class="row direction_col">
+                               <div class="relative">
+                                   <img class="cover" src="./assets/img/radar.jpeg" alt="">
+                                   <i class="fa-regular fa-circle-play absolute play_img"></i>
+                               </div>
+                               <h3 class="title_album">Heavy Metal</h3>
+                            </a>
+
+                       </div>
+                       <!-- /.album -->
+
+                       <div class="delete_fourth album row">
+
+                            <a href="#" class="row direction_col">
+                                <div class="relative">
+                                    <img class="cover" src="./assets/img/mixdaily.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play absolute play_img"></i>
+                                </div>
+                                <h3 class="title_album">Daily Mix 1</h3>
+                            </a>
+
+                         </div>
+                        <!-- /.album -->
+    
+                    </div>
+                    <!-- /.almbums row -->
+    
+                </section>
+                <!-- /.recently_played -->
+    
+                <section class="more_popular">
+    
+                    <h2>Artisti più popolari</h2>
+                    <span class="pl_1rem row">Più ascolti, più accurati saranno i suggerimenti.</span>
+    
+                    <div class="albums row">
+
+                        <div class="album row">
+
+                            <a href="#" class="row direction_col">
+                                <div class="relative">
+                                    <img class="cover" src="./assets/img/youg.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play absolute play_img"></i>
+                                </div>
+                                <h3 class="title_album">Lana del Rey</h3>
+                            </a>
+
+                         </div>
+                        <!-- /.album -->
+    
+                        <div class="delete_fourth album row">
+
+                            <a href="#" class="row direction_col">
+                                <div class="relative">
+                                    <img class="cover" src="./assets/img/einaudi.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play absolute play_img"></i>
+                                </div>
+                                <h3 class="title_album">Ludovico Einaudi</h3>
+                            </a>
+
+                         </div>
+                        <!-- /.album -->
+    
+                    </div>
+                    <!-- /.almbums row -->
+    
+                </section>
+                <!-- /.recently_played -->
+
+            </div>
+            <!-- /.scroll -->
+
+        </main>
+        <!-- /.big_container -->
+
+    </div>
+    <!-- /.wrapper -->
+
+    <footer id="site_footer" class="row">   
+
+            <div class="menu_left row">
+
+                <img src="./assets/img/sinister.jpeg" alt="">
+                <div class="song_name row direction_col">
+                    <h3 class="title_song">Sinister</h3>
+                    <a href="#" class="subtitle_song">Brano Nome</a>
+                </div>
+                <!-- /.song_name -->
+
+                <div class="icon_menu_left row">
+                    <a href="#"><i class="fa-solid fa-heart heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-folder folder"></i></a>
+                </div>
+                <!-- /.icon_menu_left -->
+
+            </div>
+            <!-- /.menu_left -->
+
+            <div class="menu_central row direction_col">
+
+                <div class="player row">
+                    <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                    <a href=""><i id="play" class="fa-regular fa-circle-play"></i></a>
+                    <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                    <a href="#"><i id="rotate_arrow" class="fa-solid fa-arrow-rotate-right"></i></a>
+                </div>
+                <!-- /.player -->
+
+                <div class="music_time row">
+
+                    <span>0.25</span>
+
+                    <a href="#">
+                        <div class="time_bar relative">
+                            <div class="time_played absolute"></div>
+                            <!-- /.time_played absolute -->
+                            <div class="ball_time absolute"></div>
+                            <!-- /.ball absolute -->
+                        </div>
+                        <!-- /.time_bar -->
+                    </a>
+
+                    <span>4.35</span>
+
+                </div>
+                <!-- /.music_time -->
+
+            </div>
+            <!-- /.menu_central -->
+
+            <div class="menu_right row">
+
+                <a href="#"><i id="list_icon" class="fa-solid fa-list"></i></a>
+                <a href="#"><i class="fa-solid fa-desktop"></i></a>
+                <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+                <a href="#">
+                    <div class="volume_bar relative">
+                        <div class="volume_current absolute"></div>
+                        <!-- /.cvolume_current absolute -->
+                        <div class="ball_volume absolute"></div>
+                            <!-- /.ball absolute -->
+                    </div>
+                    <!-- /.volume_bar relative -->
+                </a>
+
+            </div>
+            <!-- /.menu_right -->
+
+    </footer>
+    <!-- /#site_footer -->
+    
+</body>
+</html>
